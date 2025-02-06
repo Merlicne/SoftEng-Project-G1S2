@@ -5,10 +5,8 @@ This guide will help you set up a Laravel project after cloning or pulling from 
 ## Prerequisites
 
 Make sure you have the following installed on your machine:
-- PHP 8.2
-- Composer 2.8
-- npm 10.9
-- node.js 22.12
+- PHP 8.1
+- Composer 2
 
 ## Steps
 
