@@ -15,7 +15,7 @@ jobs:
         id: deploy
         uses: pinkasey/cpanel-deploy-action@v1.0.0
         with:
-          hostname: "http://cs0165.cpkkuhost.com"
+          hostname: "https://cs0165.cpkkuhost.com"
           repository_root: "/home2/cs0165/repositories/SoftEng-Project-G1S2"
           branch: main
           cpanel_token: "${{ secrets.CPANEL_TOKEN }}"
