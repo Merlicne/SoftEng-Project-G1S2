@@ -18,7 +18,7 @@ jobs:
           hostname: "https://cs0165.cpkkuhost.com"
           repository_root: "/home2/cs0165/repositories/SoftEng-Project-G1S2"
           branch: main
-          cpanel_token: "${{ secrets.CPANEL_TOKEN }}"
+          cpanel_token: ${{ secrets.CPANEL_TOKEN }}
           cpanel_username: "cs0165"
       - name: echo deploy-duration
-        run: echo "Deployment took $(cat $GITHUB_ENV | grep deploy_duration | cut -d '=' -f2) milliseconds"
+        run: echo "Deployment took ${{ steps.deploy.outputs.duration }} milliseconds"
