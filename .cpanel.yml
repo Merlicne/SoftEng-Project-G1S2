@@ -24,8 +24,6 @@ deployment:
     - /bin/mv public/test.bib $DEPLOYPATH
     - /bin/mv public/test.txt $DEPLOYPATH
     - /bin/mv public/web.config $DEPLOYPATH
-
     - /bin/rm -r vendor
     - /bin/rm -r public
-
     - /bin/unzip -o -q vendor.zip
