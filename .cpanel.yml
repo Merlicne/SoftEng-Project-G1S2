@@ -2,6 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/cs0165/public_html/
+    - export PROJECT=/home2/cs0165/Project
     - /bin/rm public/index.php
     - /bin/rm -r $DEPLOYPATH/bootstrap
     - /bin/mv public/bootstrap $DEPLOYPATH/bootstrap
@@ -41,3 +42,21 @@ deployment:
     - /bin/mv public/web.config $DEPLOYPATH
     - /bin/unzip vendor.zip
     - /bin/rm vendor.zip
+    - /bin/mv app $PROJECT/app
+    - /bin/mv bootstrap $PROJECT/bootstrap
+    - /bin/mv config $PROJECT/config
+    - /bin/mv database $PROJECT/database
+    - /bin/mv resources $PROJECT/resources
+    - /bin/mv routes $PROJECT/routes
+    - /bin/mv storage $PROJECT/storage
+    - /bin/mv tests $PROJECT/tests
+    - /bin/mv artisan $PROJECT  
+    - /bin/mv vendor $PROJECT/vendor
+    - /bin/mv composer.json $PROJECT
+    - /bin/mv composer.lock $PROJECT
+    - /bin/mv package.json $PROJECT
+    - /bin/mv webpack.mix.js $PROJECT
+    - /bin/mv phpunit.xml $PROJECT
+    - /bin/mv server.php $PROJECT
+    - /bin/mv .env $PROJECT
+    - /bin/mv .styleci.yml $PROJECT
