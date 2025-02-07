@@ -4,7 +4,7 @@ deployment:
     - export DEPLOYPATH=/home2/cs0165/public_html/
     - export SOURCEPATH=/home2/cs0165/sourcecode/
     - /bin/cp -r * $SOURCEPATH
-    - /bin/unzip vendor.zip -o -d $SOURCEPATH
+    - /bin/unzip -o vendor.zip -d $SOURCEPATH
     - /bin/rm $SOURCEPATH/vendor.zip
     - /bin/rm $SOURCEPATH/public/index.php
     - /bin/mv -f $SOURCEPATH/public/* $DEPLOYPATH
