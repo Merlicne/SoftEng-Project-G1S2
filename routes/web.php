@@ -167,9 +167,9 @@ Route::get('files/{file}', [FileUpload::class, 'download'])->name('download');*/
 
 Route::get('clear-cache', function () {
     Artisan::call('cache:clear');
-    Artisan::call('config:cache');
     Artisan::call('route:clear');
     Artisan::call('view:clear');
     Artisan::call('config:clear');
+    Artisan::call('optimize:clear');
     return "Cache is cleared";
 });

@@ -58,5 +58,4 @@ deployment:
     - /bin/mv webpack.mix.js $PROJECT
     - /bin/mv phpunit.xml $PROJECT
     - /bin/mv server.php $PROJECT
-    - /bin/mv .env $PROJECT
     - /bin/mv .styleci.yml $PROJECT
