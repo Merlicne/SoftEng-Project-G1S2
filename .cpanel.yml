@@ -2,25 +2,25 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/cs0165/public_html/
-    - /bin/cp -R public/assets $DEPLOYPATH
-    - /bin/cp -R public/bootstrap $DEPLOYPATH
-    - /bin/cp -R public/build $DEPLOYPATH
-    - /bin/cp -R public/css $DEPLOYPATH
-    - /bin/cp -R public/dist $DEPLOYPATH
-    - /bin/cp -R public/files $DEPLOYPATH
-    - /bin/cp -R public/fonts $DEPLOYPATH
-    - /bin/cp -R public/images $DEPLOYPATH
-    - /bin/cp -R public/img $DEPLOYPATH
-    - /bin/cp -R public/js $DEPLOYPATH
-    - /bin/cp -R public/plugins $DEPLOYPATH
-    - /bin/cp -R public/vendor $DEPLOYPATH
-    - /bin/cp -R public/vendors $DEPLOYPATH
-    - /bin/cp -R public/word-template $DEPLOYPATH
-    - /bin/cp public/.htaccess $DEPLOYPATH
-    - /bin/cp public/favicon.ico $DEPLOYPATH
-    - /bin/cp public/mix-manifest.json $DEPLOYPATH
-    - /bin/cp public/references.bib $DEPLOYPATH
-    - /bin/cp public/robots.txt $DEPLOYPATH
-    - /bin/cp public/test.bib $DEPLOYPATH
-    - /bin/cp public/test.txt $DEPLOYPATH
-    - /bin/cp public/web.config $DEPLOYPATH
+    - /bin/mv -R public/assets $DEPLOYPATH
+    - /bin/mv -R public/bootstrap $DEPLOYPATH
+    - /bin/mv -R public/build $DEPLOYPATH
+    - /bin/mv -R public/css $DEPLOYPATH
+    - /bin/mv -R public/dist $DEPLOYPATH
+    - /bin/mv -R public/files $DEPLOYPATH
+    - /bin/mv -R public/fonts $DEPLOYPATH
+    - /bin/mv -R public/images $DEPLOYPATH
+    - /bin/mv -R public/img $DEPLOYPATH
+    - /bin/mv -R public/js $DEPLOYPATH
+    - /bin/mv -R public/plugins $DEPLOYPATH
+    - /bin/mv -R public/vendor $DEPLOYPATH
+    - /bin/mv -R public/vendors $DEPLOYPATH
+    - /bin/mv -R public/word-template $DEPLOYPATH
+    - /bin/mv public/.htaccess $DEPLOYPATH
+    - /bin/mv public/favicon.ico $DEPLOYPATH
+    - /bin/mv public/mix-manifest.json $DEPLOYPATH
+    - /bin/mv public/references.bib $DEPLOYPATH
+    - /bin/mv public/robots.txt $DEPLOYPATH
+    - /bin/mv public/test.bib $DEPLOYPATH
+    - /bin/mv public/test.txt $DEPLOYPATH
+    - /bin/mv public/web.config $DEPLOYPATH
