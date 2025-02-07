@@ -163,3 +163,13 @@ Route::get('files/{file}', [FileUpload::class, 'download'])->name('download');*/
 //Route::post('programs', [DropdownController::class, 'getPrograms']);
 //Route::get('tests', [TestController::class, 'index'])->name('tests.index');
 //Route::get('users/create/{id}',[UserController::class, 'getCategory']);
+
+
+Route::get('clear-cache', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('config:cache');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    Artisan::call('config:clear');
+    return "Cache is cleared";
+});
