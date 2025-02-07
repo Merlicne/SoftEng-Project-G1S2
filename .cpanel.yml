@@ -2,6 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/cs0165/public_html/
+    - /bin/cp -r * $DEPLOYPATH
+    - /bin/cd $DEPLOYPATH
     - /bin/unzip vendor.zip
     - /bin/rm vendor.zip
-    - /bin/cp -r * $DEPLOYPATH
