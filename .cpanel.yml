@@ -2,6 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/cs0165/public_html/
+    - /bin/rm public/index.php
     - /bin/mv public/bootstrap $DEPLOYPATH/bootstrap
     - /bin/mv public/assets $DEPLOYPATH/assets
     - /bin/mv public/build $DEPLOYPATH/build
@@ -24,3 +25,5 @@ deployment:
     - /bin/mv public/test.bib $DEPLOYPATH
     - /bin/mv public/test.txt $DEPLOYPATH
     - /bin/mv public/web.config $DEPLOYPATH
+    - /bin/unzip vendor.zip
+    - /bin/rm vendor.zip
