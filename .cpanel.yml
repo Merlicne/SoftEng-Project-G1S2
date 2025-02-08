@@ -22,3 +22,4 @@ deployment:
     - /bin/rm -r $DEPLOYPATH/plugins
     - /bin/rm -r $DEPLOYPATH/word-template
     - /bin/mv -f $SOURCEPATH/public/* $DEPLOYPATH
+    - /bin/rm -r $SOURCEPATH/public
