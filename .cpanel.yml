@@ -7,4 +7,18 @@ deployment:
     - /bin/unzip -o vendor.zip -d $SOURCEPATH
     - /bin/rm $SOURCEPATH/vendor.zip
     - /bin/rm $SOURCEPATH/public/index.php
+    - /bin/rm $DEPLOYPATH/assets
+    - /bin/rm $DEPLOYPATH/css
+    - /bin/rm $DEPLOYPATH/js
+    - /bin/rm $DEPLOYPATH/vendor
+    - /bin/rm $DEPLOYPATH/vendors
+    - /bin/rm $DEPLOYPATH/bootstrap
+    - /bin/rm $DEPLOYPATH/build
+    - /bin/rm $DEPLOYPATH/dist
+    - /bin/rm $DEPLOYPATH/fonts
+    - /bin/rm $DEPLOYPATH/images
+    - /bin/rm $DEPLOYPATH/img
+    - /bin/rm $DEPLOYPATH/files
+    - /bin/rm $DEPLOYPATH/plugins
+    - /bin/rm $DEPLOYPATH/word-template
     - /bin/mv -f $SOURCEPATH/public/* $DEPLOYPATH
